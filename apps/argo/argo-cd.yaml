@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/mvam75/test-foo-argo-foo.git
-    targetRevision: main
+    targetRevision: master
     path: bootstrap/base
   destination:
     server: https://kubernetes.default.svc
