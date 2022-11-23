@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  namespace: argocd
+  name: argo-apps
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/mvam75/test-foo-argo-foo.git
+    targetRevision: master
+    path: apps/argo
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated: {}
