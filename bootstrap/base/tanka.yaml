@@ -10,7 +10,7 @@ spec:
           command: [/var/run/argocd/argocd-cmp-server]
           image: docker.io/grafana/tanka:0.23.1
           securityContext:
-            runAsNonRoot: 999
+            runAsNonRoot: true
             runAsUser: 999
           volumeMounts:
             - name: var-files
