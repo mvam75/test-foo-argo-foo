@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/muxinc/argo-poc.git
+    repoURL: https://github.com/mvam75/test-foo-argo-foo.git
     targetRevision: main
     path: bootstrap/base
   destination:
