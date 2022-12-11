@@ -12,7 +12,7 @@ spec:
     plugin:
       env:
         - name: TARGET_FILE
-          value: environment/local/main.jsonnet
+          value: environments/local/main.jsonnet
   destination:
     server: https://kubernetes.default.svc
     namespace: echo
