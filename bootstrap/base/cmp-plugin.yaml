@@ -13,7 +13,6 @@ data:
       generate:
         command: [sh, -c, 'tk show $ARGOCD_ENV_TARGET_FILE --dangerous-allow-redirect $EXTRA_ARGS']
       discover:
-        find:
-          discover: "*.jsonnet"
+          fileName: "*.jsonnet"
       allowConcurrency: true
       lockRepo: false
