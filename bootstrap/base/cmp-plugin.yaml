@@ -10,8 +10,6 @@ data:
       name: cmp-plugin
     spec:
       version: v1.0
-      init:
-        command: [sh, -c, jb install]
       generate:
         command: [sh, -c, 'tk show $ARGOCD_ENV_TARGET_FILE --dangerous-allow-redirect $EXTRA_ARGS']
       discover:
