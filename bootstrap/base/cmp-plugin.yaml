@@ -14,6 +14,6 @@ data:
         command: [sh, -c, 'tk show $ARGOCD_ENV_TARGET_FILE --dangerous-allow-redirect $EXTRA_ARGS']
       discover:
         find:
-          command: [sh, -c, find . -name *.jsonnet]
+          discover: "*.jsonnet"
       allowConcurrency: true
       lockRepo: false
