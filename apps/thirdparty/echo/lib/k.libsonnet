@@ -1,1 +1,1 @@
-(import '../../../../../github.com/muxinc/mux/run/jsonnet/vendor/1.23/main.libsonnet') 
+(import '../../../../libs/vendor/1.25/main.libsonnet') 
