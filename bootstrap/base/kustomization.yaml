@@ -13,13 +13,6 @@ patchesStrategicMerge:
 patches:
   - target:
       kind: Deployment
-      name: argocd-server
-    patch: |-
-      - op: add
-        path: "/spec/template/spec/containers/0/command/1"
-        value: --enable-gzip
-  - target:
-      kind: Deployment
       name: argocd-repo-server
     patch: |-
       - op: add
