@@ -8,11 +8,11 @@ spec:
   source:
     repoURL: https://github.com/mvam75/test-foo-argo-foo.git
     targetRevision: master
-    path: apps/thirdparty/echo
+    path: apps/thirdparty/echo/environments/local
     plugin:
       env:
         - name: TARGET_FILE
-          value: environments/local/main.jsonnet
+          value: main.jsonnet
   destination:
     server: https://kubernetes.default.svc
     namespace: echo
